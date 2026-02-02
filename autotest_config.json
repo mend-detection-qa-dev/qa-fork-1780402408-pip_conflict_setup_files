@@ -87,14 +87,15 @@
                     "operator": "eq",
                     "value": "Trying version getter: PythonVersionFile"
                 },
+
                 {
-                    "operator": "regex",
-                    "value": "Found Python version \\(3\\.9\\.0\\) for Pip project at \"/.*pipenv_basic_sanity.*\""
-                },
-                {
-                    "operator": "eq",
-                    "value": "python version set to: 3.9.0"
-                }
+                 "operator": "regex",
+                 "value": "Found Python version.*>=3\\.9.*in setup\\.py"
+                  },
+                  {
+                      "operator": "regex",
+                      "value": "Found Python version.*>=3\\.9.*for Pip project at.*pip_conflict_setup_files"
+                  }
             ],
             "_comment_expected_log_lines": "Optional. List of log lines to validate. Each entry should have an 'operator' (eq or regex) and 'value' (string or regex pattern). Example: [{'operator': 'eq', 'value': 'Python version: 3.11'}, {'operator': 'regex', 'value': 'Python version: \\d+\\.\\d+'}]. If not provided, only log attachment will be performed."
         }
