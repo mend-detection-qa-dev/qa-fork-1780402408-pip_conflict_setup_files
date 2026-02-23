@@ -90,7 +90,11 @@
                 {
                   "operator": "regex",
                   "value": "Found Python version.*3.9.*setup"
-                }
+                },
+                 { {
+    "operator": "regex",
+    "value": "virtualenv in .*/python/3\\.9\\.\\d+/"
+  }
             ],
             "_comment_expected_log_lines": "Optional. List of log lines to validate. Each entry should have an 'operator' (eq or regex) and 'value' (string or regex pattern). Example: [{'operator': 'eq', 'value': 'Python version: 3.11'}, {'operator': 'regex', 'value': 'Python version: \\d+\\.\\d+'}]. If not provided, only log attachment will be performed."
         }
