@@ -91,7 +91,7 @@
                   "operator": "regex",
                   "value": "Found Python version.*3.9.*setup"
                 },
-                 { {
+                 { 
     "operator": "regex",
     "value": "virtualenv in .*/python/3\\.9\\.\\d+/"
   }
